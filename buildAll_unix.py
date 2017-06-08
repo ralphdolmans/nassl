@@ -21,6 +21,11 @@ if architecture()[0] == '64bit':
         NASSL_INSTALL_DIR = join(BUILD_DIR, 'lib.linux-x86_64-' + PY_VERSION + '/')
         OPENSSL_INSTALL_DIR = join(BUILD_DIR, 'openssl-linux64')
 
+    elif platform == 'freebsd10':
+        OPENSSL_TARGET = 'BSD-x86_64'
+        NASSL_INSTALL_DIR = join(BUILD_DIR, 'lib.freebsd-10.3-RELEASE-p7-amd64-' + PY_VERSION + '/')
+        OPENSSL_INSTALL_DIR = join(BUILD_DIR, 'openssl-bsd64')
+
 elif architecture()[0] == '32bit':
     if platform == 'linux2':
         OPENSSL_TARGET = 'linux-elf'

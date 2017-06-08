@@ -12,7 +12,7 @@ import subprocess
 OPENSSL_DIR =   join(getcwd(), 'openssl')
 # Warning: use a fresh Zlib src tree on Windows or build will fail
 # ie. do not use the same Zlib src folder for Windows and Unix build
-ZLIB_DIR =      join(getcwd(), 'zlib-1.2.8')
+ZLIB_DIR =      join(getcwd(), 'zlib-1.2.11')
 
 
 TEST_DIR = join(getcwd(), 'test')
